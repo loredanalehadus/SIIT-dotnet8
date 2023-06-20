@@ -7,8 +7,8 @@
 
     public static void Main()
     {
-        PrintMin();
-        //todo: use the method from ex 2
+        //PrintMin();
+        PrintMinFloat();
         //todo: use the method from ex 3
     }
 
@@ -37,7 +37,26 @@
     //TODO: Create a method that overloads
     //the previous oneso that it can receive float numbers
 
-    //TODO: input your method
+    static float GetMin(float a, float b)
+    {
+        if (a < b)
+        {
+            return a;
+        }
+
+        return b;
+    }
+
+    static void PrintMinFloat()
+    {
+        float a = float.Parse(Console.ReadLine());
+        float b = float.Parse(Console.ReadLine());
+
+        float min = GetMin(a, b);
+
+        Console.WriteLine($"Min between {a} and {b} is {min}");
+        Console.WriteLine($"Min between {a} and {b} is {GetMin(a, b)}");
+    }
 
 
     //Exercise 3:
