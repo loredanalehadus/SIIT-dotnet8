@@ -15,22 +15,4 @@ namespace OOP2
             Console.WriteLine("Digesting");
         }
     }
-
-    public class Horse : Mammal, IMovable
-    {
-        public override void Digest()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Move()
-        {
-            Console.WriteLine("The horse moves on its feet");
-        }
-    }
-
-    public interface IMovable
-    {
-        void Move();
-    }
 }
