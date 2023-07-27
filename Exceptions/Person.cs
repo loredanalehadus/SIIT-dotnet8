@@ -28,12 +28,12 @@ namespace Exceptions
             get { return this.age; }
             set
             {
-                if (value < 0)
+                if (this.age < 0)
                 {
                     throw new ArgumentException("Age must be a positive number.");
                 }
 
-                if (value == 2)
+                if (this.age == 2)
                 {
                     throw new DressCodeException();
                 }
