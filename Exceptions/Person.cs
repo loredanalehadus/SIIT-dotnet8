@@ -8,7 +8,6 @@ namespace Exceptions
 {
     public class Person
     {
-        private string name;
         private int age;
 
         public Person(string name, int age)
@@ -17,11 +16,7 @@ namespace Exceptions
             this.Age = age;
         }
 
-        public string Name
-        {
-            get { return this.name; }
-            protected set { this.name = value; }
-        }
+        public string Name { get; set; }
 
         public int Age
         {
