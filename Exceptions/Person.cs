@@ -13,8 +13,8 @@ namespace Exceptions
 
         public Person(string name, int age)
         {
-            this.name = name;
-            this.age = age;
+            this.Name = name;
+            this.Age = age;
         }
 
         public string Name
@@ -28,12 +28,12 @@ namespace Exceptions
             get { return this.age; }
             set
             {
-                if (this.age < 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Age must be a positive number.");
                 }
 
-                if (this.age == 2)
+                if (value == 2)
                 {
                     throw new DressCodeException();
                 }
