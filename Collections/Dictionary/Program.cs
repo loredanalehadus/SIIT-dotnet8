@@ -88,7 +88,7 @@ numbers.Add(9);
 Console.WriteLine();
 Console.WriteLine("Print sorted set");
 
-foreach(int i in numbers)
+foreach (int i in numbers)
 {
     Console.WriteLine(i);
 }

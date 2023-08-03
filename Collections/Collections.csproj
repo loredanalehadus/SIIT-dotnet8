@@ -7,4 +7,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Dictionary\**" />
+    <Compile Remove="Lists\**" />
+    <Compile Remove="Queue\**" />
+    <Compile Remove="Stack\**" />
+    <EmbeddedResource Remove="Dictionary\**" />
+    <EmbeddedResource Remove="Lists\**" />
+    <EmbeddedResource Remove="Queue\**" />
+    <EmbeddedResource Remove="Stack\**" />
+    <None Remove="Dictionary\**" />
+    <None Remove="Lists\**" />
+    <None Remove="Queue\**" />
+    <None Remove="Stack\**" />
+  </ItemGroup>
+
 </Project>
